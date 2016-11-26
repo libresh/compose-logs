@@ -32,7 +32,7 @@ services:
     - VIRTUAL_HOST=kibana.${HOSTNAME}
     networks:
     - back
-    - web
+    - lb_web
 networks:
   logs:
     driver: bridge
