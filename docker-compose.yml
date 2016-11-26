@@ -16,7 +16,7 @@ services:
     networks:
     - back
   kibana:
-    build: kibana/
+    image: kibana
     volumes:
     - ./kibana/config/:/opt/kibana/config/
     environment:
