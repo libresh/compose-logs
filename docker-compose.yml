@@ -6,8 +6,7 @@ services:
     - ./logstash/config:/config
     - ./logstash/patterns:/opt/logstash/extra_patterns
     networks:
-    - logs:
-      - ipv4_address: 192.16.0.38
+    - logs
     - back
     command: logstash -f /config
   elasticsearch:
